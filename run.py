@@ -4,7 +4,7 @@ from io import StringIO
 
 class TestOutput(unittest.TestCase):
     def test_output(self):
-        expected_output = "hello, Human"
+        expected_output = "hello, Human\n"
 
         # Redirect sys.stdout to capture the output
         sys.stdout = captured_output = StringIO()
